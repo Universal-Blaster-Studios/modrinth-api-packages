@@ -1,6 +1,6 @@
 use reqwest::blocking::{Client,ClientBuilder};
 
-fn main() {
+fn get() {
     let http_client = Client::new();
     let res = http_client.get("https://google.com").send();
     
